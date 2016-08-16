@@ -1,0 +1,27 @@
+<div id="login-wrapper">
+    <!-- Login Box -->
+    <div id="login" class="box">
+        <div id="logo-upper" class="logo" hk-shift-clicker toggle-apis="showConfigAPIs">
+            <img src="assets/app/branding/default/img/logo-249x32.png">
+        </div>
+
+        <div class="padded">
+            <form method="post" ng-submit="login()">
+                <fieldset>
+                    <label for="hk-login-username" data-i18n="login.username"></label>
+                    <input id="hk-login-username" name="username" class="input-xlarge" type="text" ng-model="username">
+                    <label for="hk-login-password" data-i18n="login.password">Password</label>
+                    <input id="hk-login-password" name="password" class="input-xlarge" type="password" ng-model="password">
+                    <button type="submit" class="btn pull-right btn-primary">Login</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="alert alert-error" ng-cloak ng-show="errorMessage !== null">{{errorMessage}}</div>
+
+        <div id="logo-lower" class="logo" hk-shift-clicker toggle-apis="showConfigAPIs" style="height: 45px;">
+            <!-- <img style="height:45px" src="assets/app/branding/hexis/img/hexis.png"> -->
+        </div>
+    </div>
+
+</div>
